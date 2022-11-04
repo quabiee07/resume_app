@@ -59,6 +59,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
             theme: themeProvider.brightness == Brightness.light
                 ? ThemeManager.lightTheme
                 : ThemeManager.darkTheme,
+            themeMode: ThemeMode.system,
           );
         },
       ),

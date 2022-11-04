@@ -4,9 +4,12 @@ class AppStrings {
       '''I\'m a self-taught mobile developer with more than\n3 years of experience in android development.\nI am also seasoned UI designer who creates minimalist \nbut beautiful designs for web and mobile applications. \nI build both native and cross-platform apps using Flutter.
 ''';
   static const String midIntro =
-      "I'm a mobile engineer, building great stuff for the android \nsince 2019. Currently learning and building tools projects \nwith Flutter and Dart.";
+      "I'm a mobile engineer, building great stuff for the android \nsince 2019. Currently learning and building awesome projects \nwith Flutter and Dart.";
   static String salutaion = 'Hi, i\'m ';
   static String name = 'Quabiee';
   static String whatIdo = '\nMobile engineer';
   static String email = 'buskykwabiee@gmail.com';
+  static String title = 'quabiee.io';
+  static const String midIntroMobile =
+      "I'm a mobile engineer, building \ngreat stuff for the android since\n2019. Currently learning and \nbuilding awesome projects \nwith Flutter and Dart.";
 }
