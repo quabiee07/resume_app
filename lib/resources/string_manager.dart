@@ -19,11 +19,14 @@ class AppStrings {
   static const String whatIcanDoTitle = 'What I can do';
 
   static const String whatIcanDo =
-      'Here are somes things i can do for your company as a mobile engineer. \nI can: ';
+      'Here\'s how i can add value to your company as a mobile engineer. I can: ';
 
-  static const List whatIcanDoList =
-      ['- Design and Build sophisticated and highly scalable apps using Flutter.',
-      '- Translate and Build the designs and Wireframes into high quality responsive UI code.',
-      '- Explore feasible architectures for implementing new features.',
-      '- Document the project and code efficiently.'];
+  static const String whatIcanDoList = '''
+      - Design and Build sophisticated and highly scalable apps using Flutter.
+
+      - Translate and Build the designs and Wireframes into high quality responsive UI code.
+
+      - Explore feasible architectures for implementing new features.
+      
+      - Document the project and code efficiently.''';
 }

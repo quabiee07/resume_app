@@ -50,27 +50,17 @@ class AboutMobile extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 20),
-                  child: Container(
-                    height: 330,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          bottomLeft: Radius.circular(20),
-                        ),
-                        color: ColorManager.primaryColor),
-                    child: Text(AppStrings.aboutMe + AppStrings.hobby,
-                        style: getRegularStyle(
-                          fontSize: FontSize.s18,
-                          color: value.brightness == Brightness.light
-                              ? Colors.black
-                              : Colors.white,
-                        )),
-                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Text(AppStrings.aboutMe,
+                      style: getRegularStyle(
+                        fontSize: FontSize.s18,
+                        color: value.brightness == Brightness.light
+                            ? Colors.black
+                            : Colors.white,
+                      )),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Padding(
                   padding:
@@ -79,21 +69,14 @@ class AboutMobile extends StatelessWidget {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: 'What',
+                          text: 'I',
                           style: getBlackStyle(
                             fontSize: FontSize.s18,
                             color: ColorManager.primaryColor,
                           ),
                         ),
                         TextSpan(
-                          text: ' I',
-                          style: getBlackStyle(
-                            fontSize: FontSize.s18,
-                            color: ColorManager.primaryColor,
-                          ),
-                        ),
-                        TextSpan(
-                          text: ' can do.',
+                          text: ' get the job done.',
                           style: getBlackStyle(
                             fontSize: FontSize.s18,
                             color: ColorManager.primaryColor,
@@ -104,47 +87,29 @@ class AboutMobile extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                    padding: const EdgeInsets.only(left: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
                       AppStrings.whatIcanDo,
-                      style: getMediumStyle(
-                          fontSize: FontSize.s18,
-                          color: value.brightness == Brightness.light
-                              ? Colors.black
-                              : Colors.white,
-                          letterSpacing: 0),
+                      style: getRegularStyle(
+                        fontSize: FontSize.s18,
+                        color: value.brightness == Brightness.light
+                            ? Colors.black
+                            : Colors.white,
+                      ),
                     )),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
-                Container(
-                    height: 230,
-                    padding: const EdgeInsets.only(left: 20, bottom: 20),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        ServiceCard(
-                          title: AppStrings.whatIcanDoList[0],
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        ServiceCard(
-                          title: AppStrings.whatIcanDoList[1],
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        ServiceCard(
-                          title: AppStrings.whatIcanDoList[2],
-                        ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        ServiceCard(
-                          title: AppStrings.whatIcanDoList[3],
-                        ),
-                      ],
+                Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Text(
+                      AppStrings.whatIcanDoList,
+                      style: getRegularStyle(
+                        fontSize: FontSize.s18,
+                        color: value.brightness == Brightness.light
+                            ? Colors.black
+                            : Colors.white,
+                      ),
                     )),
                 SizedBox(
                   height: 50,

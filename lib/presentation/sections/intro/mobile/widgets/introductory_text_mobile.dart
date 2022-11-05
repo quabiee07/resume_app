@@ -41,11 +41,11 @@ class IntroductoryTextMobile extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             Text(
               AppStrings.midIntroMobile,
-              style: getSemiBoldStyle(
+              style: getRegularStyle(
                   fontSize: FontSize.s16,
                   color: value.brightness == Brightness.light
                       ? Colors.black

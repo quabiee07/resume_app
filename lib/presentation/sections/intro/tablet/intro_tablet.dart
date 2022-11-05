@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hng_task_two/presentation/sections/intro/mobile/widgets/introductory_text_mobile.dart';
 import 'package:hng_task_two/presentation/sections/intro/mobile/widgets/social_buttons_mobile.dart';
 import 'package:hng_task_two/providers/theme_provider.dart';
@@ -11,8 +12,8 @@ import '../../../../resources/string_manager.dart';
 import '../components/horizontal_line.dart';
 import '../components/vertical_line.dart';
 
-class IntroMobile extends StatelessWidget {
-  const IntroMobile({super.key});
+class IntroTablet extends StatelessWidget {
+  const IntroTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,12 +58,12 @@ class IntroMobile extends StatelessWidget {
                     ],
                   ),
                   Positioned(
-                    top: 100,
+                    top: 150,
                     left: 100,
                     right: 100,
                     child: SizedBox(
-                      height: 220,
-                      width: 100,
+                      height: 150,
+                      width: 250,
                       child: Image.asset(
                         AssetManager.headshot,
                         fit: BoxFit.cover,
@@ -72,33 +73,32 @@ class IntroMobile extends StatelessWidget {
                   ),
                   const Positioned(
                     right: 80,
-                    top: 80,
+                    top: 130,
                     child: HorizontalLine(),
                   ),
                   const Positioned(
                     right: 80,
-                    top: 80,
+                    top: 130,
                     child: VerticalLine(),
                   ),
                   const Positioned(
-                    bottom: 200,
-                    left: 70,
+                    top: 400,
+                    left: 50,
                     child: IntroductoryTextMobile(),
                   ),
                   const Positioned(
                     left: 20,
-                    right: 20,
-                    bottom: 80,
+                    top: 620,
                     child: SocialButtonsMobile(),
                   ),
-                  // Positioned(
-                  //     bottom: 20,
-                  //     left: 0,
-                  //     right: 0,
-                  //     child: SvgPicture.asset(
-                  //       AssetManager.downward,
-                  //       color: ColorManager.primaryColor,
-                  //     ))
+                  Positioned(
+                      bottom: 20,
+                      left: 0,
+                      right: 0,
+                      child: SvgPicture.asset(
+                        AssetManager.downward,
+                        color: ColorManager.primaryColor,
+                      ))
                 ],
               ),
             ),
