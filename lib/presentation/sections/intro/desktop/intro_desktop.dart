@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hng_task_two/presentation/home/components/email_section.dart';
-import 'package:hng_task_two/presentation/home/components/horizontal_line.dart';
-import 'package:hng_task_two/presentation/home/components/vertical_line.dart';
 import 'package:hng_task_two/providers/theme_provider.dart';
 import 'package:provider/provider.dart';
-import '../../../resources/asset_manager.dart';
-import '../../../resources/color_manager.dart';
-import '../../../resources/font_manager.dart';
-import '../../../resources/string_manager.dart';
+import '../../../../resources/asset_manager.dart';
+import '../../../../resources/color_manager.dart';
+import '../../../../resources/font_manager.dart';
+import '../../../../resources/string_manager.dart';
+import '../components/email_section.dart';
+import '../components/horizontal_line.dart';
 import '../components/introductory_text.dart';
 import '../components/social_buttons.dart';
+import '../components/vertical_line.dart';
 
-class HomeDesktop extends StatelessWidget {
-  const HomeDesktop({super.key});
+class IntroDesktop extends StatelessWidget {
+  const IntroDesktop({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,13 +84,13 @@ class HomeDesktop extends StatelessWidget {
               child: SocialButtons(),
             ),
             Positioned(
-                    top: 720,
-                    left: 0,
-                    right: 0,
-                    child: SvgPicture.asset(
-                      AssetManager.downward,
-                      color: ColorManager.primaryColor,
-                    ))
+                bottom: 30,
+                left: 0,
+                right: 0,
+                child: SvgPicture.asset(
+                  AssetManager.downward,
+                  color: ColorManager.primaryColor,
+                ))
           ],
         );
       }),

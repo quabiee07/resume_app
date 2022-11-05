@@ -39,7 +39,7 @@ class _SplashMobileState extends State<SplashMobile>
   }
 
   _goNext() {
-    Navigator.pushReplacementNamed(context, Routes.homeRoute);
+    Navigator.pushReplacementNamed(context, Routes.home);
   }
 
   @override

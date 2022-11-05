@@ -41,7 +41,7 @@ class _SplashDesktopState extends State<SplashDesktop>
   }
 
   _goNext() {
-    Navigator.pushReplacementNamed(context, Routes.homeRoute);
+    Navigator.pushReplacementNamed(context, Routes.home);
   }
 
   @override

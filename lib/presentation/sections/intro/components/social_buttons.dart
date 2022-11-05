@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hng_task_two/presentation/home/components/vertical_line.dart';
+import 'package:hng_task_two/presentation/sections/intro/components/vertical_line.dart';
 import 'package:hng_task_two/resources/asset_manager.dart';
 import 'package:hng_task_two/resources/color_manager.dart';
 

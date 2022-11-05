@@ -6,8 +6,8 @@ import '../../../../providers/theme_provider.dart';
 import '../../../../resources/font_manager.dart';
 import '../../../../resources/string_manager.dart';
 
-class IntroductoryTextMobile extends StatelessWidget {
-  const IntroductoryTextMobile({super.key});
+class IntroductoryText extends StatelessWidget {
+  const IntroductoryText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,30 +23,30 @@ class IntroductoryTextMobile extends StatelessWidget {
                   TextSpan(
                       text: AppStrings.salutaion,
                       style: getBlackStyle(
-                          fontSize: FontSize.s24,
+                          fontSize: FontSize.s60,
                           color: value.brightness == Brightness.light
                               ? Colors.black
                               : Colors.white)),
                   TextSpan(
                       text: AppStrings.name,
                       style: getBlackStyle(
-                          fontSize: FontSize.s24,
+                          fontSize: FontSize.s60,
                           color: ColorManager.primaryColor)),
                   TextSpan(
                       text: AppStrings.whatIdo,
                       style: getBlackStyle(
-                          fontSize: FontSize.s24,
+                          fontSize: FontSize.s60,
                           color: ColorManager.primaryColor)),
                 ],
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 25,
             ),
             Text(
-              AppStrings.midIntroMobile,
+              AppStrings.midIntro,
               style: getSemiBoldStyle(
-                  fontSize: FontSize.s16,
+                  fontSize: FontSize.s20,
                   color: value.brightness == Brightness.light
                       ? Colors.black
                       : Colors.white),

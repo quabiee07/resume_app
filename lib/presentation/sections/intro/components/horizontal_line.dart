@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-import '../../../resources/color_manager.dart';
+import '../../../../resources/color_manager.dart';
 
-class VerticalLine extends StatelessWidget {
-  const VerticalLine({super.key});
+class HorizontalLine extends StatelessWidget {
+  const HorizontalLine({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 2,
-      height: 130,
+      width:130,
+      height: 2,
       decoration: BoxDecoration(
         color: ColorManager.primaryColor,
         borderRadius: BorderRadius.circular(10),

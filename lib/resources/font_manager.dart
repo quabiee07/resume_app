@@ -20,7 +20,7 @@ class FontSize {
   static const double s17 = 17.0;
   static const double s18 = 18.0;
   static const double s20 = 20.0;
-    static const double s24 = 24.0;
+  static const double s24 = 24.0;
   static const double s40 = 40.0;
   static const double s45 = 45.0;
   static const double s50 = 50.0;
@@ -29,7 +29,7 @@ class FontSize {
 }
 
 TextStyle _getTextStyle(
-    double fontSize, String fontFamily, FontWeight fontWeight, Color color) {
+    double fontSize, String fontFamily, FontWeight fontWeight, Color color, double letterSpacing) {
   return TextStyle(
       fontSize: fontSize,
       fontWeight: fontWeight,
@@ -40,35 +40,35 @@ TextStyle _getTextStyle(
 //regular text style
 TextStyle getRegularStyle({required double fontSize, required Color color}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.regular, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.regular, color, 0.0);
 }
 
 //light text style
-TextStyle getLightStyle({required double fontSize, required Color color}) {
+TextStyle getLightStyle({required double fontSize, required Color color, double letterSpacing = 0.0}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.light, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.light, color, 0.0);
 }
 
 //black text style
-TextStyle getBlackStyle({required double fontSize, required Color color}) {
+TextStyle getBlackStyle({required double fontSize, required Color color,double letterSpacing = 0.0}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.black, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.black, color,letterSpacing);
 }
 
 //bold text style
-TextStyle getBoldStyle({required double fontSize, required Color color}) {
+TextStyle getBoldStyle({required double fontSize, required Color color,double letterSpacing = 0.0}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.bold, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.bold, color,letterSpacing);
 }
 
 // semi bold text style
-TextStyle getSemiBoldStyle({required double fontSize, required Color color}) {
+TextStyle getSemiBoldStyle({required double fontSize, required Color color,double letterSpacing = 0.0}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.semiBold, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.semiBold, color,letterSpacing);
 }
 
 //medium text style
-TextStyle getMediumStyle({required double fontSize, required Color color}) {
+TextStyle getMediumStyle({required double fontSize, required Color color,required double letterSpacing}) {
   return _getTextStyle(
-      fontSize, FontConstant.fontFamily, FontWeightManager.medium, color);
+      fontSize, FontConstant.fontFamily, FontWeightManager.medium, color,  letterSpacing);
 }

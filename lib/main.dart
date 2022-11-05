@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hng_task_two/providers/sm_provider.dart';
 import 'package:hng_task_two/providers/theme_provider.dart';
 import 'package:hng_task_two/resources/route_manager.dart';
 import 'package:hng_task_two/resources/theme_manager.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   late ThemeProvider _themeProvider;
+  late SocialMediaProvider _socialMediaProvider;
 
   @override
   void initState() {
@@ -24,6 +26,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     _themeProvider = ThemeProvider();
     _themeProvider.brightnessMode =
         WidgetsBinding.instance.window.platformBrightness;
+        _socialMediaProvider = SocialMediaProvider();
     super.initState();
   }
 
@@ -44,8 +47,11 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return ListenableProvider(
-      create: (_) => _themeProvider,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<ThemeProvider>.value(value: _themeProvider),
+        ChangeNotifierProvider<SocialMediaProvider>.value(value: _socialMediaProvider)
+      ],
       child: Builder(
         builder: (context) {
           final themeProvider = Provider.of<ThemeProvider>(
