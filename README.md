@@ -30,7 +30,7 @@ Below are some features i would've loved to add to the project if i had more tim
 - A project screens which displays a list of projects i done.
 - Localization
 
-## Challanges 
+## Challenges 
 
 - Animating the splash screen was quite challanging. Subtly animating the logo proved difficult untill i took am look at the [Docs on Animation](https://docs.flutter.dev/development/ui/widgets/animation) and found a list of animations to choose from.
 
