@@ -91,7 +91,7 @@ class IntroMobile extends StatelessWidget {
                     child: SocialButtonsMobile(),
                   ),
                   Positioned(
-                      top: 720,
+                      bottom: 20,
                       left: 0,
                       right: 0,
                       child: SvgPicture.asset(

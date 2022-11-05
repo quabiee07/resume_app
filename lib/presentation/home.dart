@@ -10,14 +10,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return PageView(
       pageSnapping: true,
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
-      controller: _pageController,
       children: [
         IntroPage(),
         AboutPage(),
