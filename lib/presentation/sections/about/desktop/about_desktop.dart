@@ -16,7 +16,7 @@ class AboutDesktop extends StatelessWidget {
       body: Consumer<ThemeProvider>(
         builder: (context, value, child) {
           return SingleChildScrollView(
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -114,7 +114,7 @@ class AboutDesktop extends StatelessWidget {
                               : Colors.white,
                           letterSpacing: 0),
                     )),
-                SizedBox(
+               const SizedBox(
                   height: 15,
                 ),
                 Container(
@@ -126,19 +126,19 @@ class AboutDesktop extends StatelessWidget {
                         ServiceCard(
                           title: AppStrings.whatIcanDoList[0],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         ServiceCard(
                           title: AppStrings.whatIcanDoList[1],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         ServiceCard(
                           title: AppStrings.whatIcanDoList[2],
                         ),
-                        SizedBox(
+                       const SizedBox(
                           width: 15,
                         ),
                         ServiceCard(
@@ -146,7 +146,7 @@ class AboutDesktop extends StatelessWidget {
                         ),
                       ],
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
               ],
