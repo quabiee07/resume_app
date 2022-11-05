@@ -35,8 +35,8 @@ Below are some features i would've loved to add to the project if i had more tim
 - Animating the splash screen was quite challanging. Subtly animating the logo proved difficult untill i took am look at the [Docs on Animation](https://docs.flutter.dev/development/ui/widgets/animation) and found a list of animations to choose from.
 
 ## Links
-[APK](https://drive.google.com/file/d/1zauue7XovVzZ16hLUWax7NWETa40mgbj/view?usp=share_link)
-[Appetize](https://appetize.io/app/qayu6ytfu6v4fv4zj5oui5xkga?device=pixel4&osVersion=11.0&scale=50)
+- [APK](https://drive.google.com/file/d/1zauue7XovVzZ16hLUWax7NWETa40mgbj/view?usp=share_link)
+- [Appetize](https://appetize.io/app/qayu6ytfu6v4fv4zj5oui5xkga?device=pixel4&osVersion=11.0&scale=50)
 
 ## Getting Started
 
